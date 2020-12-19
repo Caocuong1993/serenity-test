@@ -6,8 +6,8 @@ Feature: Allow users to login to quang cao coc coc website
     When Login with '<email>' and '<password>'
     Then Should navigate to home page site
     Examples:
-      |email|password|
-      |ledinhcuong99@gmail.com|Test11011990|
+      | email                   | password     |
+      | ledinhcuong99@gmail.com | Test11011990 |
 
   @pending
   Scenario Outline: Login failed with invalid email
@@ -15,5 +15,5 @@ Feature: Allow users to login to quang cao coc coc website
     When Login with '<email>' and '<password>'
     Then Should prompt with '<errormessage>'
     Examples:
-      |email|password|errormessage|
-      |ledinhcuong99@gmail.com|aaa|abc@example.com|
+      | email                   | password | errormessage    |
+      | ledinhcuong99@gmail.com | aaa      | abc@example.com |

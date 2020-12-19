@@ -7,6 +7,8 @@ public class LoginPageElements {
 
     public static Target EMAIL_FIELD    =  Target.the("email field")
             .located(By.name("email"));
+    public static Target EMAIL_FIELD1    =  Target.the("email field")
+            .located(By.name("email"));
 
     public static Target
             PASSWORD_FIELD = Target.the("password field")
